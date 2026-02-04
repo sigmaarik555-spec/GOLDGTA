@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GOLD GTA — ИГРА ПРО РОССИЮ</title>
+    <link rel="icon" type="image/png" href="https://onelowmta.ru/ico.png">
+    <link rel="apple-touch-icon" href="https://onelowmta.ru/ico.png">
+    
+    <!-- SEO мета-теги -->
+    <meta name="description" content="GOLD GTA — крупнейший RP проект с атмосферой российских улиц. Уникальная экономика, фракции и бесконечные возможности. Присоединяйся!">
+    <meta name="keywords" content="GOLD GTA, GTA SA, GTA San Andreas, RP сервер, roleplay, ролевая игра, Россия, MTA сервер">
+    <meta name="author" content="GOLD GTA">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="GOLD GTA — Игра про Россию">
+    <meta property="og:description" content="Самый офигеный проект GOLD GTA">
+    <meta property="og:image" content="https://onelowmta.ru/og-image.jpg">
+    <meta property="og:url" content="https://onelowmta.ru">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GOLD GTA">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        fetch('api/check-access.php').then(r=>r.json()).then(d=>{
+            if(!d.allowed) window.location.href='maintenance.html';
+        }).catch(()=>{});
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-inner">
+            <a href="index.html#" class="logo">
+                <img src="logo.png" alt="GOLD" class="header-logo">
+            </a>
+            <nav class="nav">
+                <a href="index.html#features">Исследуй</a>
+                <a href="forum/index.html">Форум</a>
+                <a href="index.html#news">Обновa</a>
+            </nav>
+            <div class="header-right">
+                <a href="https://discord.gg/n6KR8P9EDz" target="_blank" class="header-social" title="Discord">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"/></svg>
+                </a>
+                <a href="https://t.me/Rasdapu" target="_blank" class="header-social" title="Telegram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.828.94z"/></svg>
+                </a>
+                <a href="index.html#download" class="header-btn">ИГРАТЬ</a>
+                <a href="index.html#donate" class="header-btn-outline">ДОНАТ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container hero-inner">
+            <div class="hero-left">
+                <h1 class="hero-title">
+                    <span class="text-white">GOLD</span> <span class="text-accent">GTA</span>
+                </h1>
+                <p class="hero-subtitle">Игра про Россию</p>
+                <p class="hero-desc">Крутейшися Проект GOLD GTA Присойденяйся залетай в дискорд и будет инфо по установке!</p>
+                <div class="hero-buttons">
+                    <a href="index.html#download" class="btn-main">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                        Скачать
+                    </a>
+                    <a href="index.html#features" class="btn-outline">Подробнее</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-value">+1</span>
+                        <span class="stat-label">Игроков</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value">Несколько</span>
+                        <span class="stat-label">Фракций</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-value">+1</span>
+                        <span class="stat-label">Онлайн</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-glitch">
+                    <img src="hero.png" alt="" class="glitch-img">
+                </div>
+                <img src="hero.png" alt="GOLD MTA" class="hero-img">
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Листай вниз</span>
+        </div>
+    </section>
+
+    <!-- Explore -->
+    <section id="features" class="explore">
+        <div class="container">
+            <h2 class="section-title fade-up">СМОТРИ!</h2>
+            <p class="section-desc fade-up">В игре тебя ждут: здания, улицы и даже города из реальной жизни</p>
+            
+            <div class="slider-container fade-up">
+                <div class="slider-side slider-prev" id="sliderPrevImg">
+                    <img src="slides/slide6.jpg" alt="">
+                </div>
+                
+                <button class="slider-arrow prev" id="sliderPrev">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+                </button>
+                
+                <div class="slider-main">
+                    <img src="slides/slide1.jpg" alt="" id="mainSlide">
+                </div>
+                
+                <button class="slider-arrow next" id="sliderNext">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+                </button>
+                
+                <div class="slider-side slider-next" id="sliderNextImg">
+                    <img src="slides/slide2.jpg" alt="">
+                </div>
+            </div>
+            
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+            </div>
+            
+            <a href="index.html#download" class="explore-btn fade-up">ОТПРАВИТЬСЯ В ОФИГЕНЫЕ МЕСТА</a>
+        </div>
+    </section>
+
+    <!-- Donate -->
+    <section id="donate" class="donate">
+        <div class="container">
+            <div class="donate-wrapper">
+                <div class="donate-info">
+                    <h2 class="section-title left fade-up">Реалы</h2>
+                    <p class="donate-text fade-up">Пополни игровой баланс и получи внутриигровую валюту для покупки транспорта, недвижимости, бизнесов и многого другого. Все средства идут на развитие и поддержку сервера.</p>
+                    <div class="donate-benefits fade-up">
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Нужно Ожидать пока зайдёт Руководитель чтобы выдал реалы!</span>
+                        </div>
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Банковские карты, СБП,</span>
+                        </div>
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Бонус +10% при пополнении от 1000₽</span>
+                        </div>
+                        <div class="benefit">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Поддержка 24/7 ! в Discord</span>
+                        </div>
+                    </div>
+                    <div class="donate-rate fade-up">
+                        <span class="rate-label">X2 Запуск:</span>
+                        <span class="rate-value">1₽ = 4 реалов</span>
+                    </div>
+                    <p class="donate-note fade-up">ID можно узнать в игре справа вверху над худом</p>
+                </div>
+                <div class="donate-form-wrap fade-up">
+                    <form id="donateForm" class="donate-form">
+                        <div class="form-group">
+                            <label>Ведите ваш игровой ID!</label>
+                            <div class="player-input-wrap">
+                                <input type="number" id="playerId" placeholder="Введи свой ID" min="1" required>
+                                <input type="text" id="playerDisplay" class="player-display" readonly style="display: none;">
+                                <button type="button" id="changePlayer" class="change-player-btn" style="display: none;">✕</button>
+                            </div>
+                            <div id="playerNickname" class="player-nickname"></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Ведите Сумму пополнения реалов!</label>
+                            <input type="number" id="amount" placeholder="Минимум 50₽" min="50" required disabled>
+                        </div>
+                        <div class="amount-button
+                            <button type="button" data-amount="50" disabled>50₽</button>
+                            <button type="button" data-amount="100" disabled>100₽</button>
+                            <button type="button" data-amount="300" disabled>300₽</button>
+                            <button type="button" data-amount="500" disabled>500₽</button>
+                            <button type="button" data-amount="1000" disabled>1000₽</button>
+                        </div>
+                        <div class="form-result">
+                            <div class="result-row">
+                                <span>Ты получишь:</span>
+                                <span class="result-value" id="resultValue">Покачто в разработке переходи в дс и там пополняй реалы!</span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-pay" disabled>ПОПОЛНИТЬ БАЛАНС</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News -->
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title fade-up">ОБНОВА</h2>
+            <div class="news-grid fade-up">
+                <a href="updates/update1.html" class="news-card">
+                    <div class="news-img"><img src="news/news1.jpg" alt=""></div>
+                    <div class="news-content">
+                        <h3>Зимнее обновление</h3>
+                        <span class="news-date">23.12.2025</span>
+                    </div>
+                </a>
+                <a href="updates/update2.html" class="news-card">
+                    <div class="news-img"><img src="news/news2.jpg" alt=""></div>
+                    <div class="news-content">
+                        <h3>Новый транспорт</h3>
+                        <span class="news-date">20.12.2025</span>
+                    </div>
+                </a>
+                <a href="updates/update3.html" class="news-card">
+                    <div class="news-img"><img src="news/news3.jpg" alt=""></div>
+                    <div class="news-content">
+                        <h3>Бизнес-система 2.0</h3>
+                        <span class="news-date">15.12.2025</span>
+                    </div>
+                </a>
+                <a href="updates/update4.html" class="news-card">
+                    <div class="news-img"><img src="news/news4.jpg" alt=""></div>
+                    <div class="news-content">
+                        <h3>Новые фракции</h3>
+                        <span class="news-date">10.12.2025</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title fade-up">НАЧАТЬ ИГРАТЬ</h2>
+            <p class="section-desc fade-up">Скачай клиент и присоединяйся к игрокам прямо сейчас</p>
+            <a href="https://two.dragonsrv.com/data/connect/GAME.zip" class="download-btn-center fade-up" id="downloadBtn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                <span>В Разработке перейдите в наш дс!</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-left">
+                    <img src="logo.png" alt="GOLD" class="footer-logo">
+                    <p class="footer-desc">Уникальный RP-сервер с атмосферой российских улиц</p>
+                    <div class="footer-social">
+                        <a href="" target="_blank" title="Discord"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02zM8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12zm6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12z"/></svg></a>
+                        <a href="" target="_blank" title="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.213-3.053 5.56-5.023c.242-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.828.94z"/></svg></a>
+                    </div>
+                </div>
+                <div class="footer-center">
+                    <h4>Навигация</h4>
+                    <div class="footer-nav">
+                        <a href="index.html#features">Исследуй</a>
+                        <a href="index.html#donate">Реалы</a>
+                        <a href="index.html#news">Обновления</a>
+                        <a href="">Форум</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 GOLD GTA. Все права защищены.</span>
+                <p class="disclaimer">Проект не является официальным продуктом и создан исключительно в развлекательных целях. Все права на оригинальные материалы принадлежат их правообладателям.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Snow -->
+    <div class="snow" id="snow"></div>
+
+    <script src="script.js@v=3"></script>
+</body>
+</html>
